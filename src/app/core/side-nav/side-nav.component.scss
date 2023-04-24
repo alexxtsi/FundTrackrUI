@@ -1,0 +1,22 @@
+.btn-nav {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #74756f;
+    &:hover {
+        color: black;
+        background-color: white;
+    }
+}
+.active {
+    background-color: #c8ee44 !important; 
+    color: black;
+}
+.logo {
+   padding-top:20px;
+   padding-bottom:20px;
+   padding-left:20px;
+   font-weight: bold;
+ 
+}

@@ -1,0 +1,27 @@
+<div class="d-flex flex-column align-items-center min-vh-100">
+       <div class="container-fluid">
+              <div class="row p-3 ">
+                     <div class=" h4"> <fa-icon [icon]="icon"></fa-icon> FundTrackr</div>
+              </div>
+              <div class="row ">
+                     <div class="list-group">
+                            <a routerLink="/dashboard" routerLinkActive="active" ariaCurrentWhenActive="page"
+                                   class="list-group-item list-group-item-action border-0 btn-nav py-100">
+                                   <fa-icon [icon]="gaugeIcon"></fa-icon> Dashboard</a>
+                            <a routerLink="/transactions" routerLinkActive="active" ariaCurrentWhenActive="page"
+                                   class="list-group-item list-group-item-action border-0 btn-nav">
+                                   <fa-icon [icon]="moneyTransfetIcon"></fa-icon> Transactions
+                            </a>
+                            <a routerLink="/investments" routerLinkActive="active" ariaCurrentWhenActive="page"
+                                   class="list-group-item list-group-item-action border-0 btn-nav">
+                                   <fa-icon [icon]="chartInvestIcon"> </fa-icon> Investments </a>
+                            <a routerLink="/Reports" routerLinkActive="active" ariaCurrentWhenActive="page"
+                                   class="list-group-item list-group-item-action border-0 btn-nav">
+                                   <fa-icon [icon]="walletIcon"> </fa-icon> Wallet</a>
+                            <a routerLink="/reports" routerLinkActive="active" ariaCurrentWhenActive="page"
+                                   class="list-group-item list-group-item-action border-0 btn-nav">
+                                   <fa-icon [icon]="chartIcon"></fa-icon> Reports</a>
+                     </div>
+              </div>
+       </div>
+</div>

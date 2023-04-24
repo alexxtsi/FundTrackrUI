@@ -1,5 +1,13 @@
-<app-side-nav></app-side-nav>
-<app-dashboard></app-dashboard>
-<div class="content">
-  <router-outlet></router-outlet>
+<div class="container-fluid">
+  <div class="row flex-nowrap">
+    <div class="col-auto col-md col-xl-2 px-sm-2 px-0 border">
+      <app-side-nav></app-side-nav>
+    </div>
+
+    <div class="col p-0">
+      <app-nav-bar [title]="titleOutput"></app-nav-bar>
+
+      <router-outlet></router-outlet>
+    </div>
+  </div>
 </div>
