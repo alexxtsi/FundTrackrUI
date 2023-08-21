@@ -21,6 +21,9 @@
                             <a routerLink="/reports" routerLinkActive="active" ariaCurrentWhenActive="page"
                                    class="list-group-item list-group-item-action border-0 btn-nav">
                                    <fa-icon [icon]="chartIcon"></fa-icon> Reports</a>
+                            <a (click)="logout()" class="list-group-item list-group-item-action border-0 btn-nav">
+                                   <fa-icon [icon]="logoutIcon"></fa-icon> Logout
+                            </a>
                      </div>
               </div>
        </div>

@@ -1,4 +1,4 @@
-import { Component, Input, OnInit  } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 
 @Component({
@@ -7,18 +7,19 @@ import { Router, ActivatedRoute, ParamMap } from '@angular/router';
   styleUrls: ['./nav-bar.component.scss']
 })
 export class NavBarComponent {
- 
-  public data
+
+  public data: any
 
   constructor(private route: ActivatedRoute, private router: Router) { }
   ngOnInit() {
     this.route.url.subscribe(() => {
       this.data = this.route.snapshot.firstChild?.data;
     });
+    console.log(this.router.events)
     this.router.events.subscribe(path => {
-      console.log( this.data = this.route.snapshot.firstChild?.data);
+      console.log(this.data = this.route.snapshot.firstChild?.data);
     });
   }
- 
-  @Input() title = '';
+
+
 }

@@ -9,8 +9,7 @@ import { ActivatedRoute, Router, NavigationEnd } from '@angular/router'
 })
 
 export class MainLayoutComponent implements OnInit {
-  data = {};
-  titleOutput = '';
+
   constructor(private readonly route: ActivatedRoute, private readonly router: Router) {
     console.log('MainLayoutComponent constructor called');
   }
